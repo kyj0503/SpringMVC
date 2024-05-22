@@ -2,7 +2,10 @@ package hello.servlet.basic.request;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
+<<<<<<< HEAD
 import jakarta.servlet.http.Cookie;
+=======
+>>>>>>> 5c0aa84628c45091ae3f4de3e1483f3f4d70c3f7
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -17,11 +20,16 @@ public class RequestHeaderServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         printStartLine(request);
         printHeader(request);
+<<<<<<< HEAD
         printHeaderUtils(request);
         printEtc(request);
     }
 
 
+=======
+    }
+
+>>>>>>> 5c0aa84628c45091ae3f4de3e1483f3f4d70c3f7
     private static void printStartLine(HttpServletRequest request) {
         System.out.println("--- REQUEST-LINE - start ---");
         System.out.println("request.getMethod() = " + request.getMethod()); //GET
@@ -58,6 +66,7 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println();
     }
 
+<<<<<<< HEAD
     //Header 편리한 조회
     private void printHeaderUtils(HttpServletRequest request) {
         System.out.println("--- Header 편의 조회 start ---");
@@ -108,4 +117,6 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println();
     }
 
+=======
+>>>>>>> 5c0aa84628c45091ae3f4de3e1483f3f4d70c3f7
 }
