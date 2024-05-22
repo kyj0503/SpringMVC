@@ -21,6 +21,7 @@ public class RequestHeaderServlet extends HttpServlet {
         printEtc(request);
     }
 
+
     private static void printStartLine(HttpServletRequest request) {
         System.out.println("--- REQUEST-LINE - start ---");
         System.out.println("request.getMethod() = " + request.getMethod()); //GET
@@ -106,4 +107,5 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println("--- 기타 조회 end ---");
         System.out.println();
     }
+
 }
